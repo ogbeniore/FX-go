@@ -1,6 +1,6 @@
 module.exports = {
   pwa: {
-    name: 'FX-go',
-    themeColor: '#8f0112'
+    name: 'FX-GO',
+    themeColor: '#8F0112'
   }
 };
