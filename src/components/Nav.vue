@@ -13,14 +13,14 @@
                 <span></span>
             </div>
             <ul class="navbar_links">
-                <li><router-link to="/">History</router-link></li>
-                <li><router-link to="/">About</router-link></li>
+                <li><router-link to="/history">History</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
             </ul>
         </nav>
         <div class="mobile_nav" :class="{ open: isOpen }">
             <ul class="mobile_nav_links">
                 <li><router-link to="/">History</router-link></li>
-                <li><router-link to="/">About</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
             </ul>
         </div>
     </div>
@@ -46,19 +46,15 @@ export default {
     width: 100vw;
     background: $main-color;
     color: white;
-    height: 60px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     padding: 1em 0;
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    // top: 0;
     a {
         color: white;
         text-decoration: none;
-        &:hover {
-            color: $black;
-            transition: color 0.3s ease-in;
-        }
     }
     &_logo {
         font-size: 2em;
@@ -169,17 +165,13 @@ export default {
     overflow-y: hidden;
     &_links {
         list-style: none;
-        padding: 3em;
+        padding: 1em 3em;
         li {
             padding: 1em;
             font-size: 2em;
             a {
                 color: white;
                 text-decoration: none;
-                &:hover {
-                    color: $black;
-                    transition: color 0.3s ease-in;
-                }
             }
             &:hover {
                 transform: skewX(-20deg);

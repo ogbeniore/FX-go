@@ -20,6 +20,7 @@ body {
     display: grid;
     justify-content: center;
     margin: 0;
+    font-family: "Dosis", sans-serif;
 }
 #app {
     -webkit-font-smoothing: antialiased;

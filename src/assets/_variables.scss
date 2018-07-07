@@ -1,2 +1,6 @@
 $main-color: #8f0112;
 $black: #414141;
+.app {
+    overflow-x: hidden;
+    height: calc(100vh - 70px);
+}
