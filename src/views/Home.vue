@@ -47,9 +47,9 @@ export default {
         currencySymbol: "$"
       },
       fromCurrency: {
-        id: "USD",
-        currencyName: "United States Dollar",
-        currencySymbol: "$"
+        id: "NGN",
+        currencyName: "Nigerian Naira",
+        currencySymbol: "₦"
       },
       toConvert: 0,
       converted: 0,

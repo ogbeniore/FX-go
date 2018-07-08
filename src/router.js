@@ -19,7 +19,7 @@ export default new Router({
             {
               call: "color",
               modifier: "temp",
-              argument: "#8f0112"
+              argument: "#ffffff"
             },
             { call: "fail", modifier: "temp", argument: "#6e0000" },
             { call: "location", modifier: "temp", argument: "top" },
