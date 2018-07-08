@@ -2,6 +2,8 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
+import "./plugins/axios";
+import "./plugins/vue-progress";
 
 Vue.config.productionTip = false;
 

@@ -19,8 +19,8 @@
         </nav>
         <div class="mobile_nav" :class="{ open: isOpen }">
             <ul class="mobile_nav_links">
-                <li><router-link to="/history">History</router-link></li>
-                <li><router-link to="/about">About</router-link></li>
+                <li @click="openNav"><router-link to="/history">History</router-link></li>
+                <li @click="openNav"><router-link to="/about">About</router-link></li>
             </ul>
         </div>
     </div>
@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../assets/variables";
 .navbar {
     width: 100vw;

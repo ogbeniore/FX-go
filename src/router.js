@@ -12,17 +12,83 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: HomePage
+      component: HomePage,
+      meta: {
+        progress: {
+          func: [
+            {
+              call: "color",
+              modifier: "temp",
+              argument: "#8f0112"
+            },
+            { call: "fail", modifier: "temp", argument: "#6e0000" },
+            { call: "location", modifier: "temp", argument: "top" },
+            {
+              call: "transition",
+              modifier: "temp",
+              argument: {
+                speed: "2s",
+                opacity: "0.6s",
+                termination: 400
+              }
+            }
+          ]
+        }
+      }
     },
     {
       path: "/about",
       name: "about",
-      component: AboutPage
+      component: AboutPage,
+      meta: {
+        progress: {
+          func: [
+            {
+              call: "color",
+              modifier: "temp",
+              argument: "#ffffff"
+            },
+            { call: "fail", modifier: "temp", argument: "#6e0000" },
+            { call: "location", modifier: "temp", argument: "top" },
+            {
+              call: "transition",
+              modifier: "temp",
+              argument: {
+                speed: "2s",
+                opacity: "0.6s",
+                termination: 400
+              }
+            }
+          ]
+        }
+      }
     },
     {
       path: "/history",
       name: "history",
-      component: HistoryPage
+      component: HistoryPage,
+      meta: {
+        progress: {
+          func: [
+            {
+              call: "color",
+              modifier: "temp",
+              argument: "#ffffff"
+            },
+            { call: "fail", modifier: "temp", argument: "#6e0000" },
+            { call: "location", modifier: "temp", argument: "top" },
+            {
+              call: "transition",
+              modifier: "temp",
+              argument: {
+                speed: "2s",
+                opacity: "0.6s",
+                termination: 400
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 });
