@@ -19,7 +19,7 @@
         </nav>
         <div class="mobile_nav" :class="{ open: isOpen }">
             <ul class="mobile_nav_links">
-                <li><router-link to="/">History</router-link></li>
+                <li><router-link to="/history">History</router-link></li>
                 <li><router-link to="/about">About</router-link></li>
             </ul>
         </div>
