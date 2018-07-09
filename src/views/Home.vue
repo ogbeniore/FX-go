@@ -5,8 +5,8 @@
         <ul>
           <li v-for="currency in currencies" :key="currency.id">
             <label>
-              <input v-if="to" type="radio" name="currency.currencyName" id="currency.id" v-model="toCurrency" v-bind:value="currency" @change="toggleOverlay">
-              <input v-else type="radio" name="currency.currencyName" id="currency.id" v-model="fromCurrency" v-bind:value="currency" @change="toggleOverlay">
+              <input v-if="to" type="radio" :name="currency.currencyName" :id="currency.id" v-model="toCurrency" v-bind:value="currency" @change="toggleOverlay">
+              <input v-else type="radio" :name="currency.currencyName" i:d="currency.id" v-model="fromCurrency" v-bind:value="currency" @change="toggleOverlay">
               <span class="text">{{currency.id}}: {{currency.currencyName}}</span>
               <div class="check"></div>
             </label>
@@ -21,16 +21,16 @@
           1249 <span class="symbol">{{fromCurrency.currencySymbol}}</span>
         </p>
       </form>
-      <p class="shortname">{{fromCurrency.id}}</p>
+      <p class="shortname" @click="toggleFromOverlay">{{fromCurrency.id}}</p>
     </div>
     <div class="half">
-      <p class="shortname">{{toCurrency.id}}</p>
+      <p class="shortname" @click="toggleToOverlay">{{toCurrency.id}}</p>
       <form @submit="convert">
         <p class="number">
           1249 <span class="symbol">{{toCurrency.currencySymbol}}</span>
         </p>
       </form>
-      <h1 @click="toggleToOverlay(!from)">{{toCurrency.currencyName}}</h1>
+      <h1 @click="toggleToOverlay">{{toCurrency.currencyName}}</h1>
     </div>
   </div>
 </template>
