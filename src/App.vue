@@ -47,11 +47,19 @@ body {
     justify-content: center;
     margin: 0;
     font-family: "Dosis", sans-serif;
+    @import url("https://fonts.googleapis.com/css?family=Dosis");
 }
 #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: $main-color;
+}
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 100vw;
+        max-height: 100vh;
+        overflow: hidden;
+    }
 }
 </style>
