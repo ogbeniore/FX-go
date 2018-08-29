@@ -106,7 +106,7 @@ export default {
     this.$axios
     .get("https://free.currencyconverterapi.com/api/v5/currencies")
     .then(response => {
-      this.currencies = response.data.results
+      this.currencies = response.data.results.sort()
     }).catch(error => {
       console.log(error)
     })
